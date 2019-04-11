@@ -1,0 +1,113 @@
+/*
+    Version - ALPHA 1.5.0
+    Copyright - Eduardo Furlaneti - [NewLink]
+    -----------------------------------------
+*/
+
+/*Mobile*/
+@media only screen and (max-width: 425px){
+    .container{max-width: 90vw;}
+}
+
+/*Tablet*/
+@media only screen and (min-width: 426px) and (max-width: 1024px){
+    .container{max-width: 80vw;}
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1024px){
+    .container{max-width: 70vw;}
+    
+    .container.right .column:first-child{flex-grow: 1.325;}
+    
+    .container.left .column:last-child{flex-grow: 1.425;}
+    
+    .container.left{
+        margin: 0 0 0 13.5vw;
+        max-width: none;
+    }
+    .container.right{
+        margin: 0 13.5vw 0 0;
+        max-width: none;
+    }
+}
+
+/*.container {margin: auto;}*/
+.container {margin: 0 13.5vw;}
+.container .container{ max-width: 80%; }
+
+
+/*Grid*/
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: baseline;
+    
+}
+
+@media only screen and (max-width: 1024px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.row.max-2 .column{
+    flex: 50%;
+    max-width: 50%;
+}
+.row.max-3 .column{
+    flex: 33.333333%;
+    max-width: 33.333333%;
+}
+.row.max-4 .column{
+    flex: 25%;
+    max-width: 25%;
+}
+
+.row.top .column{
+    align-self: auto;
+}
+
+.column{
+    order: 0;
+/*    align-self: flex-start;*/
+    align-self: center;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.column.double{flex-grow: 2;}
+.column.triple{flex-grow: 3;}
+.column.quintuplo{flex-grow: 5;}
+
+/*Helper*/
+
+.text-center,
+.text-center *{ text-align: center; }
+
+.text-left,
+.text-left *{ text-align: left; }
+
+.text-right,
+.text-right *{ text-align: right; }
+
+.break-line:before{
+    content: "\A";
+    white-space: pre;
+}
+
+/*Automatics*/
+
+img{max-width: 100%;}
+hr{
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+body{margin: 0;}
