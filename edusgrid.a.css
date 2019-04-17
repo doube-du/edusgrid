@@ -1,5 +1,5 @@
 /*
-    Version - ALPHA 1.5.2
+    Version - ALPHA 1.5.4
     Copyright - Eduardo Furlaneti - [NewLink]
     -----------------------------------------
 */
@@ -46,9 +46,16 @@
     justify-content: space-around;
     align-content: flex-start;
     align-items: baseline;
+}
+.row.centered{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.row.centered .column{
     
 }
-
 .row.stretch{
     justify-content: space-around;    
     align-items: stretch;
@@ -94,6 +101,12 @@
 .column.triple{flex-grow: 3;}
 .column.quintuplo{flex-grow: 5;}
 
+.column.size-90{max-width: 90%}
+.column.size-80{max-width: 80%}
+.column.size-70{max-width: 70%}
+.column.size-60{max-width: 60%}
+.column.size-50{max-width: 50%}
+
 /*Helper*/
 
 .text-center,
@@ -111,7 +124,6 @@
 }
 
 /*Automatics*/
-*{overflow: auto;}
 img{max-width: 100%;}
 hr{
     border-bottom: 0;
