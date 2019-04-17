@@ -103,7 +103,7 @@
 }
 
 /*Automatics*/
-
+*{overflow: auto;}
 img{max-width: 100%;}
 hr{
     border-bottom: 0;
