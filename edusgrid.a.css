@@ -1,5 +1,5 @@
 /*
-    Version - ALPHA 1.5.4
+    Version - ALPHA 1.5.0
     Copyright - Eduardo Furlaneti - [NewLink]
     -----------------------------------------
 */
@@ -49,12 +49,9 @@
 }
 .row.centered{
     display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-}
-.row.centered .column{
-    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .row.stretch{
     justify-content: space-around;    
