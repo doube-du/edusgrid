@@ -49,6 +49,14 @@
     
 }
 
+.row.stretch{
+    justify-content: space-around;    
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.row.stretch .column {align-self: stretch;}
+
 @media only screen and (max-width: 1024px){
     .row{
         flex-direction: column;
