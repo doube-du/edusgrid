@@ -65,10 +65,15 @@
 .row.stretch .column {align-self: stretch;}
 
 @media only screen and (max-width: 1024px){
-    .row{
-        flex-direction: column;
+    .row{flex-direction: column;}
+    ul.row{flex-direction: row;}
+    ul.row[class*='max-'] .column{
+        flex: 50%;
+        max-width: 50%;
     }
 }
+
+ul.row{padding: 0;}
 
 .row.max-2 .column{
     flex: 50%;
