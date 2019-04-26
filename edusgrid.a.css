@@ -30,6 +30,8 @@
         margin: 0 13.5vw 0 0;
         max-width: none;
     }
+    
+    .container .container{ max-width: 80%; }
 }
 
 /*.container {margin: auto;}*/
@@ -37,7 +39,6 @@
     margin: 0 13.5vw;
     max-width: 100vw;
 }
-.container .container{ max-width: 80%; }
 
 
 /*Grid*/
