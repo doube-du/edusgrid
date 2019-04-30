@@ -14,7 +14,7 @@
 /*Mobile*/
 @media only screen and (max-width: 425px){
     .container{
-        max-width: 80vw;
+        max-width: 85vw;
         margin: auto;
     }
 }
@@ -44,6 +44,23 @@
     }
     
     .container .container{ max-width: 80%; }
+    .row.max-2-desktop .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .row.max-3-desktop .column{
+        flex: 33.333333%;
+        max-width: 33.333333%;
+    }
+    .row.max-4-desktop .column{
+        flex: 25%;
+        max-width: 25%;
+    }
+
+    .row.max-6-desktop .column{
+        flex: 16.66667%;
+        max-width: 16.66667%;
+    }
 }
 
 /*Grid*/
