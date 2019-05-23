@@ -182,3 +182,10 @@ hr{
     border-left: 0;
 }
 body{margin: 0;}
+
+form input,
+form button{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
